@@ -7,6 +7,7 @@ export default class IndexRoute {
 	}
 
 	static index(req: Request, res: Response, next: Function):void {
+		res.locals.title = 'Test title';
     	res.render('index', { title: 'Express' });
 	}
 }
